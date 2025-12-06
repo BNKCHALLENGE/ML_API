@@ -573,5 +573,7 @@ async def health_check():
 # ===== 서버 실행 =====
 
 if __name__ == "__main__":
-    # 서버 실행: uvicorn app:app --host 0.0.0.0 --port 8000 --reload
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    import os
+    # Railway는 PORT 환경변수로 포트를 지정함
+    port = int(os.getenv("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port, reload=False)
