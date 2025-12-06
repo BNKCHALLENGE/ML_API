@@ -192,7 +192,7 @@ BNK/
 | `current_day_of_week` | int | 요일 (0=월~6=일) | 3 |
 | `current_weather` | string | 날씨 | "Sunny", "Cloudy", "Rainy", "Snowy" |
 
-# 카테고리 가능한 값: ["Food", "Cafe", "Tourist", "Culture", "Festival", "Walk", "Shopping", "Self-Dev", "Sports"]
+### 카테고리 가능한 값: ["Food", "Cafe", "Tourist", "Culture", "Festival", "Walk", "Shopping", "Self-Dev", "Sports"]
 
 ### MissionRecommendation (출력)
 
@@ -361,3 +361,4 @@ Swagger UI: http://localhost:8000/docs
 ---
 
 ⭐ **Star this repository if you find it helpful!** ⭐
+
