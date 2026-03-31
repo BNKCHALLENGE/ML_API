@@ -10,6 +10,21 @@
 
 ---
 
+## 🧠 ML 아키텍처
+
+![ML Architecture](./docs/resources/readme/ml-lightgbm-architecture.png)
+
+이 다이어그램은 현재 프로젝트의 핵심 모델링 흐름과 맞닿아 있습니다.
+
+- 사용자 feature, 미션 feature, 상황 feature를 결합
+- 상호작용 feature를 생성
+- LightGBM으로 참여 확률 추론
+- Priority Weight를 후처리로 반영해 최종 추천 점수 계산
+
+실제 구현은 `api_server.py`, `missions.csv`, `BNK.ipynb`에 반영되어 있습니다.
+
+---
+
 ## 📌 주요 특징
 
 - ✅ **LightGBM Binary Classifier** - 17개 Feature, AUC ~0.85-0.90
